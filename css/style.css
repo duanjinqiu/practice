@@ -14,11 +14,11 @@ body {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 .container .left {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  float: left;
+  margin-left: -100%;
   width: 148px;
   -webkit-border: 1px solid #5e5e5e;
   -moz-border: 1px solid #5e5e5e;
@@ -44,6 +44,7 @@ body {
   width: 120px;
 }
 .container .middle {
+  float: left;
   -webkit-border: 1px solid #5e5e5e;
   -moz-border: 1px solid #5e5e5e;
   -ms-border: 1px solid #5e5e5e;
@@ -53,9 +54,8 @@ body {
   margin-left: 170px;
 }
 .container .right {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  float: left;
+  margin-left: -180px;
   width: 178px;
   -webkit-border: 1px solid #5e5e5e;
   -moz-border: 1px solid #5e5e5e;

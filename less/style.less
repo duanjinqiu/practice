@@ -35,12 +35,12 @@ body {
   width: @container_width;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 
 
   .left {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    float: left;
+    margin-left: -100%;
     width: @left_width;
     .border(1px);
 
@@ -61,15 +61,15 @@ body {
   }
 
   .middle {
+    float: left;
     .border(1px);
     margin-right: 200px;
     margin-left: 170px;
   }
 
   .right {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    float: left;
+    margin-left: -180px;
     width: @right_width;
     .border(1px);
     ul {
