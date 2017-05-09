@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.container {
+  color: #6f7070;
+}
+.container .top {
+  text-align: center;
+}
+.container .items {
+  margin: 0 15px 0 15px;
+  overflow: hidden;
+}
+.container .items .item {
+  float: left;
+  width: 22.7%;
+  margin: 50px 15px 50px 15px;
+  box-shadow: 0 0 5px black;
+}
+.container .items .item img {
+  width: 100%;
+  height: 200px;
+}
+.container .items .item .bottom {
+  font-size: 10px;
+  padding: 0 10px 40px 10px;
+}
+.container .items .item .bottom span:last-child {
+  float: right;
+}
+.foot {
+  text-align: center;
+}
+.foot a {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  background-color: #ee786a;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #fff;
+}
+.foot a:hover {
+  background-color: #d66b62;
+}
