@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f6f5f9;
+}
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.top a {
+  position: absolute;
+  z-index: 1;
+}
+.top .searchinput {
+  padding-left: 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.top .searchinput form {
+  position: relative;
+}
+.top .searchinput form input {
+  height: 25px;
+  background: #eaeaea;
+  border-radius: 5px;
+}
+.top .searchinput form .search {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+.middle {
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  margin-top: 2px;
+  padding: 20px 0;
+}
+.middle span {
+  float: left;
+}
+.middle .l {
+  float: left;
+  display: inline-block;
+  font-size: 20px;
+  background-color: red;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.middle .l i {
+  line-height: 40px;
+}
+.middle .e {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.m {
+  margin-top: 100px;
+}
+.container {
+  background-color: #fff;
+  margin-top: 2px;
+}
+.container > h4:first-child {
+  color: #b0b0b0;
+}
+.container > h4:first-child::before {
+  content: '|';
+  display: inline-block;
+  width: 10px;
+  color: #0000ff;
+}
+.container .flex {
+  display: flex;
+  flex-flow: wrap;
+}
+.container .flex .item {
+  width: 25%;
+}
+.container .flex .item a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+.container .flex .item a .font {
+  font-size: 45px;
+}
+.container .flex .item a h4 {
+  margin-top: 10px;
+}
+.m {
+  margin-top: 20px;
+}
