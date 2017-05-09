@@ -13,7 +13,7 @@
 .container .middle {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 20px 190px 20px 190px;
+  padding: 20px 240px 20px 215px;
   box-sizing: border-box;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -24,19 +24,20 @@
 .container .middle p {
   text-indent: 2em;
   margin-top: 20px;
+  text-align: justify;
 }
 .container .left {
   width: 150px;
   background: yellow;
-  margin-left: -100%;
+  margin-left: -99%;
   text-align: center;
-  font-size: 0;
   -webkit-box-shadow: 0 0 5px #000000;
   -moz-box-shadow: 0 0 5px #000000;
   -ms-box-shadow: 0 0 5px #000000;
   -o-box-shadow: 0 0 5px #000000;
   box-shadow: 0 0 5px #000000;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 .container .left img {
   width: 120px;
@@ -56,10 +57,11 @@
   -ms-box-shadow: 0 0 5px #000000;
   -o-box-shadow: 0 0 5px #000000;
   box-shadow: 0 0 5px #000000;
+  vertical-align: top;
 }
 .container .right {
   width: 180px;
-  margin-left: -180px;
+  margin-left: -190px;
 }
 .container .right ul li {
   list-style-type: none;
