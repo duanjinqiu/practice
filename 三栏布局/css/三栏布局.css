@@ -47,11 +47,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-border: 1px solid #ffffff;
-  -moz-border: 1px solid #ffffff;
-  -ms-border: 1px solid #ffffff;
-  -o-border: 1px solid #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   -webkit-box-shadow: 0 0 5px #000000;
   -moz-box-shadow: 0 0 5px #000000;
   -ms-box-shadow: 0 0 5px #000000;

@@ -9,14 +9,38 @@ body {
 .container .top {
   text-align: center;
 }
+.container .content {
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 352px;
+}
 .container .items {
-  margin: 0 15px 0 15px;
+  width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .container .items {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container .items {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .items {
+    width: 400px;
+  }
+  .container .items .content {
+    margin: 0 auto;
+  }
+}
 .container .items .item {
-  float: left;
-  width: 22.7%;
-  margin: 50px 15px 50px 15px;
   box-shadow: 0 0 5px black;
 }
 .container .items .item img {

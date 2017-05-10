@@ -1,0 +1,187 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f5f9;
+}
+ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 50px;
+  background-color: #3b4248;
+
+  .content {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+
+    a {
+      font-size: 14px;
+      color: #fff;
+      &:hover {
+        color: #bebebe;
+      }
+    }
+
+    .left-login {
+      line-height: 50px;
+      span {
+        color: #fff;
+      }
+    }
+    .right-server {
+      li {
+        float: left;
+        margin-left: 30px;
+      }
+
+      .quick {
+        border: 1px solid #fff;
+        padding: 5px 30px 5px 5px;
+      }
+    }
+  }
+}
+
+.headerbottom {
+  height: 65px;
+  .content {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    .bleft {
+      width: 170px;
+      margin-top: 10px;
+      img {
+        float: left;
+        width: 50px;
+      }
+      .text {
+        float: left;
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+    .bright {
+      margin-top: 20px;
+      a {
+        color: #000;
+        font-size: 14px;
+        &:hover {
+          color: #6f7070;
+        }
+      }
+      li {
+        float: left;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.banner {
+  margin-bottom: 50px;
+  .bannerpic {
+    height: 600px;
+    //在less文件中，它认为css才是它的根目录，如果这里直接写image/banner.png的话，那么编译后的css文件就是css/image/banner.png实际上这个路径根本是错误的
+    background: url('../image/banner.png') no-repeat center center;
+  }
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+  padding: 5px;
+
+  .cleft {
+    position: relative;
+    width: 480px;
+    height: 425px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 60px 60px 60px;
+    background-color: #fff;
+    box-shadow: 0 0 8px #c5c5c5;
+    &:hover {
+      box-shadow: 0 0 5px #178ee8;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+      p:last-child {
+        font-size: 12px;
+      }
+    }
+    .content {
+      overflow: hidden;
+      margin-bottom: 20px;
+      .con {
+        float: left;
+        width: 119px;
+        margin-bottom: 20px;
+        label {
+          margin-left: 16px;
+        }
+        select {
+          margin-left: 20px;
+        }
+      }
+      
+    }
+    .cbottom {
+      position: absolute;
+      bottom: 50px;
+      overflow: hidden;
+      margin-left: 20px;
+
+      span {
+        vertical-align: top;
+      }
+      form {
+        display: inline-block;
+        input  {
+          float: left;
+          width: 200px;
+          height: 21px;
+        }
+        input::-webkit-input-placeholder {
+          color: #186ec5;
+        }
+        .submitbt {
+          float: left;
+          background-color: #186ec5;
+          vertical-align: middle;
+          font-size: 13px;
+          color: #fff;
+          padding: 5px;
+          &:hover {
+            background-color: #164284;
+          }
+        }
+      }
+    }
+  }
+}
+.ct {
+  height: 40px;
+  //CSS3线性渐变
+  background: -webkit-linear-gradient(left, #186bc0, #a7d1fb, #186ec0);
+  span {
+    line-height: 40px;
+    margin-left: 10px;
+    color: #f4fafc;
+  }
+}

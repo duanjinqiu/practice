@@ -8,13 +8,38 @@ body {
   .top {
     text-align: center;
   }
+  .content {
+    float: left;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 352px;
+
+  }
   .items {
-    margin: 0 15px 0 15px;
+    width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+      & {
+        width: 900px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      & {
+        width: 600px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      & {
+        width: 400px;
+        .content {
+          margin: 0 auto;
+        }
+      }
+    }
     overflow: hidden;
     .item {
-      float: left;
-      width: 22.7%;
-      margin: 50px 15px 50px 15px;
       box-shadow: 0 0 5px black;
 
       img {
