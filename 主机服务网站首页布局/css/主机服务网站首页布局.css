@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f5f9;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 50px;
+  background-color: #3b4248;
+}
+.header .content {
+  overflow: hidden;
+  width: 1000px;
+  margin: 0 auto;
+}
+.header .content a {
+  font-size: 14px;
+  color: #fff;
+}
+.header .content a:hover {
+  color: #bebebe;
+}
+.header .content .left-login {
+  line-height: 50px;
+}
+.header .content .left-login span {
+  color: #fff;
+}
+.header .content .right-server li {
+  float: left;
+  margin-left: 30px;
+}
+.header .content .right-server .quick {
+  border: 1px solid #fff;
+  padding: 5px 30px 5px 5px;
+}
+.headerbottom {
+  height: 65px;
+}
+.headerbottom .content {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.headerbottom .content .bleft {
+  width: 170px;
+  margin-top: 10px;
+}
+.headerbottom .content .bleft img {
+  float: left;
+  width: 50px;
+}
+.headerbottom .content .bleft .text {
+  float: left;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.headerbottom .content .bright {
+  margin-top: 20px;
+}
+.headerbottom .content .bright a {
+  color: #000;
+  font-size: 14px;
+}
+.headerbottom .content .bright a:hover {
+  color: #6f7070;
+}
+.headerbottom .content .bright li {
+  float: left;
+  margin-left: 20px;
+}
+.banner {
+  margin-bottom: 50px;
+}
+.banner .bannerpic {
+  height: 600px;
+  background: url('../image/banner.png') no-repeat center center;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+.container .cleft {
+  position: relative;
+  width: 480px;
+  height: 425px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 60px 60px 60px;
+  background-color: #fff;
+  box-shadow: 0 0 8px #c5c5c5;
+}
+.container .cleft:hover {
+  box-shadow: 0 0 5px #178ee8;
+}
+.container .cleft .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container .cleft .title p:last-child {
+  font-size: 12px;
+}
+.container .cleft .content {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.container .cleft .content .con {
+  float: left;
+  width: 119px;
+  margin-bottom: 20px;
+}
+.container .cleft .content .con label {
+  margin-left: 16px;
+}
+.container .cleft .content .con select {
+  margin-left: 20px;
+}
+.container .cleft .cbottom {
+  position: absolute;
+  bottom: 50px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.container .cleft .cbottom span {
+  vertical-align: top;
+}
+.container .cleft .cbottom form {
+  display: inline-block;
+}
+.container .cleft .cbottom form input {
+  float: left;
+  width: 200px;
+  height: 21px;
+}
+.container .cleft .cbottom form input::-webkit-input-placeholder {
+  color: #186ec5;
+}
+.container .cleft .cbottom form .submitbt {
+  float: left;
+  background-color: #186ec5;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #fff;
+  padding: 5px;
+}
+.container .cleft .cbottom form .submitbt:hover {
+  background-color: #164284;
+}
+.ct {
+  height: 40px;
+  background: -webkit-linear-gradient(left, #186bc0, #a7d1fb, #186ec0);
+}
+.ct span {
+  line-height: 40px;
+  margin-left: 10px;
+  color: #f4fafc;
+}
