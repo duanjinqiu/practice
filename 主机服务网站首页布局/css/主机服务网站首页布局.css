@@ -172,3 +172,11 @@ a {
   margin-left: 10px;
   color: #f4fafc;
 }
+.container .one {
+  width: 480px;
+  box-sizing: border-box;
+}
+.container .one .font {
+  color: #1b6dc0;
+  font-size: 20px;
+}
