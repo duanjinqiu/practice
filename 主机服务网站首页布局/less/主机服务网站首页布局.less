@@ -111,7 +111,7 @@ a {
     width: 480px;
     height: 425px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0 60px 60px 60px;
     background-color: #fff;
     box-shadow: 0 0 8px #c5c5c5;
@@ -188,10 +188,58 @@ a {
 .container {
   .one {
     width: 480px;
+    padding: 30px;
     box-sizing: border-box;
-    .font {
-      color: #1b6dc0;
-      font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #3682cd;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    .titles {
+      margin-bottom: 50px;
+      .font {
+        color: #1b6dc0;
+        font-size: 20px;
+      }
+    }
+    .ccc {
+      overflow: hidden;
+      .pic {
+        img {
+          width: 60px;
+        }
+        p {
+          color: red;
+          font-size: 14px;
+        }
+      }
+      .c_right {
+        width: 330px;
+        span {
+          display: inline-block;
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          text-align: justify;
+        }
+      }
+    }
+    .bo {
+      clear: both;
+      overflow: hidden;
+      a {
+        float: right;
+        padding: 5px 50px;
+        background-color: #186ec5;
+        border-radius: 10px;
+        color: #fff;
+        i {
+          margin-left: 10px;
+        }
+        &:hover {
+          background-color: #134d92;
+        }
+      }
     }
   }
 }

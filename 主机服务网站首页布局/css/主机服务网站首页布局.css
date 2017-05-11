@@ -102,7 +102,7 @@ a {
   width: 480px;
   height: 425px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0 60px 60px 60px;
   background-color: #fff;
   box-shadow: 0 0 8px #c5c5c5;
@@ -174,9 +174,55 @@ a {
 }
 .container .one {
   width: 480px;
+  padding: 30px;
   box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #3682cd;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
-.container .one .font {
+.container .one .titles {
+  margin-bottom: 50px;
+}
+.container .one .titles .font {
   color: #1b6dc0;
   font-size: 20px;
+}
+.container .one .ccc {
+  overflow: hidden;
+}
+.container .one .ccc .pic img {
+  width: 60px;
+}
+.container .one .ccc .pic p {
+  color: red;
+  font-size: 14px;
+}
+.container .one .ccc .c_right {
+  width: 330px;
+}
+.container .one .ccc .c_right span {
+  display: inline-block;
+  font-size: 14px;
+}
+.container .one .ccc .c_right p {
+  font-size: 12px;
+  text-align: justify;
+}
+.container .one .bo {
+  clear: both;
+  overflow: hidden;
+}
+.container .one .bo a {
+  float: right;
+  padding: 5px 50px;
+  background-color: #186ec5;
+  border-radius: 10px;
+  color: #fff;
+}
+.container .one .bo a i {
+  margin-left: 10px;
+}
+.container .one .bo a:hover {
+  background-color: #134d92;
 }
