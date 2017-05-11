@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: 200px;
+  height: 100%;
+}
+.container .ccc {
+  min-height: 100%;
+  position: relative;
+}
+.container .ccc .logo {
+  height: 50px;
+  background-color: #31373d;
+}
+.container .ccc .logo ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.container .ccc .logo ul li {
+  list-style-type: none;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+}
+.container .ccc .logo ul > li {
+  float: left;
+}
+.container .ccc .logo ul > li:hover .second-menu {
+  display: block;
+}
+.container .ccc .logo ul > li a {
+  display: inline-block;
+  width: 150px;
+  color: #fff;
+}
+.container .ccc .logo ul > li a:hover {
+  background-color: #6f7070;
+}
+.container .ccc .logo ul > li .second-menu {
+  background-color: #bebebe;
+  display: none;
+  position: absolute;
+  width: 150px;
+}
+.container .ccc .logo > ul {
+  float: right;
+  margin-right: 20px;
+}
+.container .ccc .content {
+  margin: 0 auto;
+  height: 1300px;
+  background: #9c9c9c;
+  padding: 20px 100px 50px 100px;
+}
+.container .ccc .content p {
+  text-align: justify;
+}
+.container .ccc .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: #31373d;
+}
+.container .ccc .footer p {
+  text-align: center;
+  font-size: 14px;
+}
+.container .ccc .footer p a {
+  color: #bdbdbd;
+}
+.container .ccc .footer p a:hover {
+  color: #6c6c6c;
+}
+.leftbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #bdbdbd;
+  height: 100%;
+}
+.leftbar ul {
+  padding: 0;
+}
+.leftbar ul li {
+  list-style-type: none;
+  text-align: center;
+  height: 50px;
+}
+.leftbar ul li a {
+  padding: 14.5px 68px;
+  line-height: 50px;
+}
+.leftbar ul li a:hover {
+  background-color: aliceblue;
+}
