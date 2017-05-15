@@ -6,33 +6,86 @@ html {
   width: 100%;
   height: 100%;
 }
-body {
-  width: 100%;
-  height: 100%;
+.ho {
+  background-color: #e65827 !important;
 }
-.container {
+body {
+  position: relative;
   width: 100%;
   height: 100%;
-  background: url("../image/bk.png") no-repeat 50% 50%;
-  background-size: cover;
-  //background-position: 50% 50%;
+  background: url("../image/bk.png") no-repeat 100% 100%;
+  background-size: 100% 80%;
+  background-color: #f3f3f3;
   .top {
     text-align: center;
+    margin-bottom: 120px;
     .te {
       width: 120px;
-      height: 150px;
+      height: 100px;
       background: url("../image/e.png") no-repeat 50% 50%;
-      background-size: cover;
+      background-size: 50px 70px;
       margin: 0 auto;
-      margin-bottom: 100px;
     }
-    .p {
-      width: 300px;
+    .text {
+      p {
+        text-align: center;
+        color: #3d3d3d;
+      }
       h1 {
         margin-bottom: 30px;
+        font-size: 20px;
       }
-      p {
-        text-align: justify;
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    .sign {
+      display: block;
+      border-radius: 50px;
+      text-decoration: none;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 8px;
+      margin-bottom: 20px;
+      //取消默认手机点击灰色框
+      -webkit-tap-highlight-color: rgba(255,0,0,0);
+    }
+    .signIn{
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    .signUp {
+      background-color: #efdecc;
+      border: 1px solid #efdecc;
+      color: #998470;
+    }
+  }
+  @media screen and (min-width: 550px) {
+    & {
+      width: 400px;
+      background-position: 50% 100%;
+      background-size: 55% 80%;
+      margin: 0 auto;
+    }
+    .top {
+      .te {
+        background-size: 30px 30px;
+        height: 60px;
+      }
+      .text {
+        h1 {
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+    .bottom {
+      bottom: 0;
+      .sign {
+        width: 30%;
       }
     }
   }
