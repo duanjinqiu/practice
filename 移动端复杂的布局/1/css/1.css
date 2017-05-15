@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+.ho {
+  background-color: #e65827 !important;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../image/bk.png") no-repeat 100% 100%;
+  background-size: 100% 80%;
+  background-color: #f3f3f3;
+}
+body .top {
+  text-align: center;
+  margin-bottom: 120px;
+}
+body .top .te {
+  width: 120px;
+  height: 100px;
+  background: url("../image/e.png") no-repeat 50% 50%;
+  background-size: 50px 70px;
+  margin: 0 auto;
+}
+body .top .text p {
+  text-align: center;
+  color: #3d3d3d;
+}
+body .top .text h1 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+body .bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+body .bottom .sign {
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 20px;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+body .bottom .signIn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+body .bottom .signUp {
+  background-color: #efdecc;
+  border: 1px solid #efdecc;
+  color: #998470;
+}
+@media screen and (min-width: 550px) {
+  body {
+    width: 400px;
+    background-position: 50% 100%;
+    background-size: 55% 80%;
+    margin: 0 auto;
+  }
+  body .top .te {
+    background-size: 30px 30px;
+    height: 60px;
+  }
+  body .top .text h1 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  body .bottom {
+    bottom: 0;
+  }
+  body .bottom .sign {
+    width: 30%;
+  }
+}

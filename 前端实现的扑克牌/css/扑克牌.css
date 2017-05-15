@@ -1,0 +1,124 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body > div {
+  width: 206px;
+  height: 280px;
+  float: left;
+  margin: 20px 0 0 20px;
+  border: 1px solid black;
+  -wekit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+body > div .pb {
+  width: 16px;
+  position: absolute;
+}
+body > div .pb i {
+  font-size: 30px;
+}
+body > div .tpb {
+  top: 5px;
+  left: 5px;
+}
+body > div .bpb {
+  transform: rotate(180deg);
+  right: 5px;
+  bottom: 5px;
+}
+body > div .middle {
+  position: absolute;
+  top: 17px;
+  left: 33px;
+}
+body > div .middle div {
+  width: 140px;
+  height: 123px;
+  background: url('../image/pic.jpg') no-repeat;
+}
+body > div .middle div:last-child {
+  transform: rotate(180deg);
+}
+.k_hm div {
+  color: #000000;
+}
+.k_hm .middle div {
+  background-position: 1px 0;
+}
+.k_hx div {
+  color: #ff0000;
+}
+.k_hx .middle div {
+  background-position: -141px 0;
+}
+.k_hf div {
+  color: #ff0000;
+}
+.k_hf .middle div {
+  background-position: -281px 0;
+}
+.k_ht div {
+  color: #ff0000;
+}
+.k_ht .middle div {
+  background-position: -421px 0;
+}
+.q_hm div {
+  color: #000000;
+}
+.q_hm .middle div {
+  background-position: 0 -123px;
+}
+.q_hx div {
+  color: #ff0000;
+}
+.q_hx .middle div {
+  background-position: -140px -123px;
+}
+.q_hf div {
+  color: #ff0000;
+}
+.q_hf .middle div {
+  background-position: -282px -123px;
+}
+.q_ht div {
+  color: #000000;
+}
+.q_ht .middle div {
+  background-position: -420px -123px;
+}
+.j_hm div {
+  color: #000000;
+}
+.j_hm .middle div {
+  background-position: 1px -246px;
+}
+.j_hx div {
+  color: #ff0000;
+}
+.j_hx .middle div {
+  background-position: -140px -246px;
+}
+.j_hf div {
+  color: #ff0000;
+}
+.j_hf .middle div {
+  background-position: -281px -246px;
+}
+.j_ht div {
+  color: #000000;
+}
+.j_ht .middle div {
+  background-position: -421px -246px;
+}
