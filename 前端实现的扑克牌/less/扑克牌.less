@@ -1,11 +1,6 @@
 .left {
   float: left;
 }
-.right {
-  float: right;
-}
-@pic_width: 140px;
-@pic_height: 123px;
 .pre(@style, @value) {
   -wekit-@{style}: @value;
   -moz-@{style}: @value;
@@ -16,92 +11,229 @@
 .border-radius(@value) {
   .pre(border-radius, @value);
 }
+.transform (@value) {
+  .pre(transform, rotate(@value));
+}
+.bg_size(@value) {
+  .pre(background-size, @value);
+}
+@div_width: 207px;
+@div_height: 330px;
 body {
-  margin: 0;
-  padding: 0;
-  &>div {
-    width: 206px;
-    height: 280px;
-    float: left;
-    margin: 20px 0 0 20px;
-    border: 1px solid black;
-    .border-radius(10px);
-    position: relative;
-    .pb {
-      width: 16px;
-      position: absolute;
-      i {
-        font-size: 30px;
-      }
-    }
-    .tpb {
-      top: 5px;
-      left: 5px;
-    }
-    .bpb {
-      transform: rotate(180deg);
-      right: 5px;
-      bottom: 5px;
-    }
-    .middle {
-      position: absolute;
-      top: 17px;
-      left: 33px;
-      div {
-        width: @pic_width;
-        height: @pic_height;
-        background: url('../image/pic.jpg') no-repeat;
-        &:last-child {
-          transform: rotate(180deg);
-        }
-      }
+  background-color: #f9f9f9;
+  .container {
+    width: 1165px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 28px;
+    &>div {
+      width: @div_width;
+      height: @div_height;
+      float: left;
+      margin: 20px 0 0 20px;
+      border: 1px solid black;
+      .border-radius(10px);
+      position: relative;
+      background-color: #fff;
     }
   }
 }
-.bg(@pic_x, @pic_y, @font_color) {
+.img {
+  width: 67%;
+  height: 74%;
+  position: absolute;
+  top: 10%;
+  left: 17%;
   div {
-    color: @font_color;
-  }
-  .middle {
-    div {
-      background-position: @pic_x @pic_y;
+    height: 50%;
+    background: url("../image/pic.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    &:last-child {
+      .transform(180deg);
     }
   }
 }
-.k_hm {
-  .bg(1px, 0, black);
+//两边的字符和图案的大小
+@font_size: 30px;
+.top {
+  width: 17px;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  i {
+    font-size: @font_size;
+  }
 }
+.bottom {
+  width: 17px;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  .transform(180deg);
+  i {
+    font-size: @font_size;
+  }
+}
+.red {
+  i {
+    color: #ca0000;
+  }
+}
+@pic_width: 140px;
+@pic_height: 123px;
 .k_hx {
-  .bg(-(@pic_width + 1), 0, red);
+  .img div {
+    background-position: -(@pic_width + 1) 0;
+  }
 }
 .k_hf {
-  .bg(-(@pic_width * 2 + 1), 0, red);
+  .img div {
+    background-position: -(@pic_width * 2 + 2) 0;
+  }
 }
 .k_ht {
-  .bg(-(@pic_width * 3 + 1), 0, red);
+  .img div {
+    background-position: -(@pic_width * 3 + 2) 0;
+  }
 }
 .q_hm {
-  .bg(0, -@pic_height, black);
+  .img div {
+    background-position: 0 -(@pic_height);
+  }
 }
 .q_hx {
-  .bg(-@pic_width, -@pic_height, red);
+  .img div {
+    background-position: -(@pic_width + 1) -(@pic_height);
+  }
 }
 .q_hf {
-  .bg(-(@pic_width * 2 + 2), -@pic_height, red);
+  .img div {
+    background-position: -(@pic_width * 2 + 2) -(@pic_height);
+  }
 }
 .q_ht {
-  .bg(-(@pic_width * 3), -@pic_height, black);
+  .img div {
+    background-position: -(@pic_width * 3) -(@pic_height);
+  }
 }
 .j_hm {
-  .bg(1px, -@pic_height * 2, black);
+  .img div {
+    background-position: 0 -(@pic_height * 2);
+  }
 }
 .j_hx {
-  .bg(-@pic_width, -@pic_height * 2, red);
+  .img div {
+    background-position: -(@pic_width + 1) -(@pic_height * 2);
+  }
 }
 .j_hf {
-  .bg(-(@pic_width * 2 + 1), -@pic_height * 2, red);
+  .img div {
+    background-position: -(@pic_width * 2 + 1) -(@pic_height * 2);
+  }
 }
 .j_ht {
-  .bg(-(@pic_width * 3 + 1), -@pic_height * 2, black);
+  .img div {
+    background-position: -(@pic_width * 3 + 1) -(@pic_height * 2);
+  }
 }
 
+.a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -23.5px;
+  margin-left: -20px;
+  i {
+    font-size: 53px;
+  }
+}
+
+.bodycontent {
+  width: 67%;
+  height: 74%;
+  position: absolute;
+  top: 12%;
+  left: 17%;
+  i {
+    font-size: 53px;
+  }
+}
+
+.content_10 {
+  .bodycontent;
+  i {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .up {
+    position: absolute;
+    left: 50%;
+    margin-left: -26.5px;
+    top: 32px;
+  }
+  .down{
+    position: absolute;
+    left:51%;
+    margin-left:-26.5px;
+    bottom:32px;
+    .transform(180deg);
+  }
+}
+
+.content_9 {
+  .up {
+    top: 50%;
+    margin-top: -31px;
+  }
+}
+.content_8 {
+  .bodycontent;
+  i {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .center {
+    display: inline-block;
+    margin: 34px 0;
+  }
+  .up {
+    position: absolute;
+    left: 50%;
+    margin-left: -26.5px;
+    top: 50px;
+  }
+  .down {
+    position: absolute;
+    left: 50%;
+    margin-left: -26.5px;
+    bottom: 42px;
+    .transform(180deg);
+  }
+}
+
+.content_5 {
+  .bodycontent;
+  i {
+    float: left;
+  }
+  .down_c {
+    margin-top: 129px;
+  }
+  .down_3 {
+    margin-top: 190px;
+  }
+  .right {
+    float: right;
+  }
+  .down {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+  }
+}
