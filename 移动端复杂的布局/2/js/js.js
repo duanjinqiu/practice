@@ -20,4 +20,11 @@ $(function() {
    input.blur(function() {
       $(this).attr('placeholder', temp);
    });
+   var a = $('form>a');
+    a.on('touchstart', function() {
+        console.dir($(this).addClass('fho'));
+   });
+    a.on('touchend', function() {
+       $(this).removeClass('fho');
+    });
 });
