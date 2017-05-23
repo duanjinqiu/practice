@@ -1,8 +1,11 @@
-form {
+form{
     margin: 30px;
 }
 .onoff {
     position: relative;
+}
+.onoff .one, .two {
+    display: none;
 }
 .onoff .img {
     display: inline-block;
@@ -62,6 +65,9 @@ form {
     top: 0;
     left: 0;
 }
+.swinput {
+    display: none;
+}
 .ch .checkbox {
     display: inline-block;
     width: 20px;
@@ -80,4 +86,7 @@ form {
 }
 .right {
     font-weight: 800;
+}
+.ch .chinput {
+    display: none;
 }

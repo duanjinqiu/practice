@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
-    <form action="">
-        <label class='onoff'>
-            <div class="img"></div>
-            <span>Radio is-off</span>
+    <form action="" class="onoff">
+        <label>
+            <div class="img imgone"></div>
+            <input class="one" type="radio" name="onoff">
+            <span class="textone">Radio is off</span>
+        </label>
+        <label>
+            <div class="img imgtwo"></div>
+            <input class="two" type="radio" name="onoff">
+            <span class="texttwo">Radio is on</span>
         </label>
     </form>
     <form action="">
@@ -18,12 +24,18 @@
             <div class="img"></div>Disable Radio is-off
         </label>
     </form>
-    <div class="sw">
-        <span class="text">ON</span>
-        <div class="image"></div>
-    </div>
+    <form action="">
+        <label>
+            <input class="swinput" type="checkbox" checked>
+            <div class="sw">
+                <span class="text">ON</span>
+                <div class="image"></div>
+            </div>
+        </label>
+    </form>
     <div class="ch">
         <label class="checkLabel">
+            <input class="chinput" type="checkbox" checked>
             <div class="checkbox"><i class="iconfont icon-duihao-copy right"></i></div>
             Checkbox2
         </label>
