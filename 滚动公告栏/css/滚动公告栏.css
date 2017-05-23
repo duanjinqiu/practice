@@ -1,0 +1,50 @@
+body, ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    width: 100px;
+}
+.outter1 {
+    width: 600px;
+    border: 1px solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.inner1 {
+    width: 600px;
+    padding: 0 600px;
+    text-align: center;
+    overflow: hidden;
+}
+.inner1 li {
+    float: left;
+}
+.outter2 {
+    width: 220px;
+    height: 21px;
+    border: 1px solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.inner2 {
+    width: 100px;
+    margin: 0 auto;
+}
+.inner2 a {
+    display: block;
+}
+.outter3 {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid;
+    overflow: hidden;
+}
+.inner3 {
+    padding: 100px 0;
+}
+.inner3 a:hover {
+    color: red;
+}

@@ -1,0 +1,143 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@container_padding: 10px;
+body {
+  margin: 0;
+  padding: 0 @container_padding;
+  background-color: #f2f2f2;
+}
+.container {
+}
+.nav {
+  height: 70px;
+  margin: 0 -@container_padding;
+  padding: 0 @container_padding;
+  text-align: center;
+  line-height: 70px;
+  background-color: #ffffff;
+  .title {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .r {
+    margin-left: 20px;
+  }
+}
+
+.top {
+  height: 170px;
+  .t {
+    margin: 20px 0;
+    overflow: hidden;
+    .img {
+      position: relative;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .num {
+        background-color: #fff;
+        position: absolute;
+        border-radius: 100%;
+        top: 10px;
+        left: 78px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    .userM {
+      width: 64%;
+      p {
+        margin: 0;
+      }
+      .username {
+        font-size: 24px;
+      }
+      .address {
+        font-size: 12px;
+        color: #828282;
+      }
+      .start {
+        margin: 10px 0;
+      }
+    }
+  }
+  .select {
+    .h {
+      width: 33%;
+      font-size: 1rem;
+      float: left;
+      border-right: 1px solid #d9d9d9;
+      height: 20px;
+      &:last-child{
+        border-right: none;
+      }
+    }
+    .write {
+      span {
+        color: #11e962;
+      }
+      .circle {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-color: #11e962;
+        border-radius: 100%;
+        text-align: center;
+        .pen {
+          font-size: 12px;
+          color: #fff;
+        }
+      }
+    }
+    .inbox {
+      text-align: center;
+    }
+    .posting {
+      color: #dadada;
+    }
+  }
+}
+
+.user {
+  overflow: hidden;
+  border-top: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+  .userimg {
+    border-radius: 100%;
+    img {
+      width: 30px;
+      height: 30px;
+      vertical-align: bottom;
+    }
+  }
+  .comment {
+    width: 88%;
+    p {
+      margin: 0;
+    }
+    .t {
+      margin: 3px 0 5px 0;
+      .username {
+        font-size: 16px;
+      }
+      .date {
+        font-size: 12px;
+        color: #d7d7d7;
+      }
+    }
+    .content {
+      font-size: 14px;
+      padding: 0 40px 0 0;
+      text-align: justify;
+    }
+  }
+}
