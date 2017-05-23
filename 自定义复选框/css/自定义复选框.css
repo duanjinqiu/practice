@@ -1,0 +1,83 @@
+form {
+    margin: 30px;
+}
+.onoff {
+    position: relative;
+}
+.onoff .img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../image/radio.png) no-repeat right top;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.onoff .on {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../image/radio.png) no-repeat -60px -30px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.disable {
+    cursor: not-allowed;
+}
+.sw {
+    width: 80px;
+    height: 30px;
+    background: #34495e;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.sw .text {
+    color: #1abc9c;
+    position: absolute;
+    top: 4px;
+    left: 20px;
+}
+.sw .textOff {
+    color: #e7e7e7;
+    position: absolute;
+    top: 4px;
+    left: 30px;
+}
+.sw .image {
+    display: inline-block;
+    background: url("../image/icon-on.png");
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.sw .imageOff {
+    display: inline-block;
+    background: url("../image/icon-off.png");
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ch .checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #1b7e5a;
+    vertical-align: top;
+    position: relative;
+}
+.ch .checkbox i {
+    position: absolute;
+    font-size:25px;
+    font-weight: 800;
+    top: 4px;
+    left: -8px;
+    color: white;
+}
+.right {
+    font-weight: 800;
+}
