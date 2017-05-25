@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>二叉树</title>
+</head>
+<body>
+    <script>
+        function Node(value, left, right) {
+            this.value = value;
+            this.left = left;
+            this.right = right;
+            this.getValue = function() {
+                return this.value;
+            }
+        }
+        function SearchTree() {
+            this.root = null;
+            this.insert = insert;
+            this.preOrder = preOrder;
+            this.inOrder = inOrder;
+            this.postOrder = postOrder;
+        }
+        function insert(value) {
+            var node = new Node(value, null, null);
+            if (this.root == null) {
+                this.root = node;
+            }else {
+                var temp = this.root;
+                var parent;
+                while(true) {
+                    parent = temp;
+                    if (value < temp.value) {
+                        temp = temp.left;
+                        if (temp == null) {
+                            parent.left = node;
+                            break;
+                        }
+                    }else {
+                        temp = temp.right;
+                        if (temp == null) {
+                            parent.right = node;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        function inOrder(node) {
+            if (node != null) {
+                inOrder(node.left);
+                console.log(node.getValue() + ',');
+                inOrder(node.right);
+            }
+        }
+        function preOrder(node) {
+            if (node != null) {
+                console.log(node.getValue() + ',');
+                preOrder(node.left);
+                preOrder(node.right);
+            }
+        }
+        function postOrder(node) {
+            if (node != null) {
+                postOrder(node.left);
+                postOrder(node.right);
+                console.log(node.getValue() + ',');
+            }
+        }
+        var tree = new SearchTree();
+        tree.insert(15);
+        tree.insert(3);
+        tree.insert(10);
+        console.dir(tree);
+        tree.inOrder(tree.root);
+    </script>
+</body>
+</html>

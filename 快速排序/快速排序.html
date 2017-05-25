@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>快速排序</title>
+</head>
+<body>
+    <p class="before"></p>
+    <p class="after"></p>
+    <script>
+        console.time();
+        var arr = [1, 3, 2, 5, 4];
+        function quickSort(arr) {
+            if (arr.length <= 1) {
+                return arr;
+            }
+//            取数组的中位数索引
+            var pivotIndex = Math.floor(arr.length / 2);
+//            splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。该方法会改变原始数组。通过数组的中位数索引取中位数，并且把中位数从数组中剔除
+            var pivot = arr.splice(pivotIndex, 1)[0];
+            var left = [];
+            var right = [];
+            for (i in arr) {
+//                遍历数组，比中位数小的放左边
+                if (arr[i] < pivot) {
+                    left.push(arr[i]);
+                }else {
+//                    比中位数大的放右边
+                    right.push(arr[i]);
+                }
+            }
+//            函数自己调用自己，是递归。
+//            js从左到右执行，左边要有结果才执行右边。比如这里quickSort(left)要有结果才执行后面的concat
+            return quickSort(left).concat([pivot], quickSort(right));
+        }
+        console.log(quickSort(arr));
+        console.timeEnd();
+
+        console.time();
+
+        var que = [1, 3, 2, 5, 4];
+        var temp;
+        for (var i = 0; i < que.length; i++) {
+            for (var j = i + 1; j < que.length; j++) {
+                if (que[i] > que[j]) {
+                    temp = que[i];
+                    que[i] = que[j];
+                    que[j] = temp;
+                }
+            }
+        }
+        console.log(que);
+        console.timeEnd();
+
+        console.time();
+        var query = [1, 3, 2, 5, 4];
+        console.log(query.sort());
+        console.timeEnd();
+    </script>
+</body>
+</html>
