@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript API</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="map1"></div>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+    function initialize() {
+//        创建Map实例
+        var map = new BMap.Map('map');
+//        设置地图的中心点坐标和地图的级别
+        var point = new BMap.Point(120.257036, 31.878322);
+//        初始化地图
+        map.centerAndZoom(point,19);
+//        开启鼠标滚轮缩放
+        map.enableScrollWheelZoom(true);
+//        设置当前地图显示的城市
+        map.setCurrentCity = '无锡';
+//        地图，卫星，三维控件
+        map.addControl(new BMap.MapTypeControl());
+//在地图左下角添加版权控件
+        var bs = map.getBounds();   //返回地图可视区域
+        var cr = new BMap.CopyrightControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        cr.addCopyright({id: 1, content: "<a class='my' href='https://github.com/duanjinqiu/' target='_blank'>&copy;这里是版权信息</a>", bounds: bs});
+        map.addControl(cr);
+
+//        添加左边平移缩放控件
+        map.addControl(new BMap.NavigationControl({offset: new BMap.Size(10, 50)}));
+//        添加右下角的缩略地图
+        map.addControl(new BMap.OverviewMapControl());
+//        添加地图比例尺控件
+        map.addControl(new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT}));
+//        右下角的定位控件
+        map.addControl(new BMap.GeolocationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT}));
+
+
+//        设置地图允许的最大级别为8，最小级别为4
+        var map1 = new BMap.Map('map1', {enableMapClick: false});
+//        实例化地图用城市名设置地图的中心点
+        map1.centerAndZoom('无锡', 11);
+        map1.enableScrollWheelZoom(true);
+
+       console.log(map1.getDistance(new BMap.Point(120, 30), new BMap.Point(121, 31)));
+       var polyline = new BMap.Polyline([new BMap.Point(120, 30), new BMap.Point(121, 31)], {strokeColor: 'red', strokeWeight: 6, strokeOpacity: 0.5});
+       var polyline1 = new BMap.Polyline([new BMap.Point(121, 31), new BMap.Point(120, 30)], {strokeColor: 'blue', strokeWeight: 3, strokeOpecity: 0.5});
+       map1.addOverlay(polyline1);
+       map1.addOverlay(polyline);
+
+        var mapType1 = new BMap.MapTypeControl();
+        map1.addControl(mapType1);
+        map1.setCurrentCity = '无锡';
+
+        var geolocationControl = new BMap.GeolocationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT});
+        map1.addControl(geolocationControl);
+        geolocationControl.addEventListener('locationSuccess', function (e) {
+            var address= '';
+            address += e.addressComponent.province;
+            address += e.addressComponent.city;
+            address += e.addressComponent.district;
+            address += e.addressComponent.street;
+            address += e.addressComponent.streetNumber;
+            console.log('当前所在位置: ' + address);
+        });
+        geolocationControl.addEventListener('locationError', function (e) {
+            console.log(e);
+        });
+
+        map.addEventListener('click', function(e) {
+           console.log('纬度: ' + e.point.lat + ', 经度: ' + e.point.lng);
+        });
+        map.addEventListener('zoomend', function(e) {
+            console.log('地图缩放至: ' + this.getZoom() + '级');
+            map.removeEventListener('zoomend', arguments.callee);
+            console.log(arguments.callee);
+        });
+
+
+
+    }
+
+
+    function loadScript() {
+        var script = document.createElement('script');
+        script.type= 'text/javascript';
+        script.src = 'http://api.map.baidu.com/api?v=2.0&&ak=tzSP6K8ZqtQPgQxLCT9rarDMCNrBH4xb&callback=initialize';
+        document.body.appendChild(script);
+
+//        对于左下角版权控件的一些操作
+        setTimeout(function () {
+            $('.my').parents('.anchorBL').css('display', 'block');
+            $('.my').parents('.anchorBL').removeClass();
+        }, 700);
+        setInterval(function () {
+            if ($('.my').parents('span').css('display') == 'none') {
+                $('.my').parents('span').css('display', 'inline');
+            }
+        }, 100);
+
+
+    }
+    window.onload = loadScript;
+
+
+</script>
+</body>
+</html>

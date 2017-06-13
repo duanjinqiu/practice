@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Node(value) {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+
+//        prototype属性能向对象添加属性和方法。在这里能向数组对象添加createHufuTree方法
+        Array.prototype.createHufuTree = function() {
+//            初始化结点
+            var nodes = [];
+            for (var i = 0; i < this.length; i++) {
+//                将数组中的每一个数以树的形式推进nodes中
+                nodes.push(new Node(this[i]));
+            }
+//            当nodes的长度大于1的时候，执行后面的语句，知道nodes里面只剩一个node为止
+            while (nodes.length > 1) {
+//                根据node的value给node排序
+                    nodes.sort(function(a, b) {
+                        return a.value - b.value;
+                    });
+//                取出数组中第一个node并把返回结果存入one中
+                    var one = nodes.shift().value;
+//                再次取出数组中的第一个node并把结果存入two中，注意这里的第一个是上一次取出第一个node前的第二个node
+                    var two = nodes.shift().value;
+//                计算前两个node的value的和存入sum中
+                    var sum = one + two;
+//                构造结点
+                    var root = new Node(sum);
+//                这里为什么不用判断大的放左边还是右边，因为上面的sort已经排好序了，one就是小的，two就是大的，所以one放左边，two放右边
+                    root.left = new Node(one);
+                    root.right = new Node(two);
+//                将得到的树推入森林中的首部
+                    nodes.unshift(root);
+                }
+//            函数执行结束返回得到的森林
+            return nodes[0];
+        }
+        var arr = [1, 3, 5, 7];
+        var res = arr.createHufuTree();
+        console.log(res);
+    </script>
+</body>
+</html>

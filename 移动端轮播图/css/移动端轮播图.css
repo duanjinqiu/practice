@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+.outter {
+    overflow: hidden;
+    width: 800px;
+    height: 300px;
+}
+.one, .two, .three {
+    width: 800px;
+    height: 300px;
+    float: left;
+}
+.one {
+    background-color: red;
+}
+.two {
+    background-color: green;
+}
+.three {
+    background-color: blue;
+}
+.inner {
+    width:3200px;
+}

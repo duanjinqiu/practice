@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #ececec;
+}
+.top {
+  height: 60px;
+  background-color: #3492ea;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.top .inner {
+  width: 95%;
+  margin: 0 auto;
+}
+.top .inner .left {
+  float: left;
+  line-height: 60px;
+}
+.top .dd {
+  line-height: 60px;
+}
+.sm {
+  font-size: 0.5rem;
+  margin: 0 0 25px 20px;
+}
+.one {
+  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.one .box-one {
+  background-color: white;
+  overflow: hidden;
+  padding: 10px 0 0 0;
+}
+.one .box-one .r {
+  float: right;
+  width: 95%;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid;
+}
+.one .box-one .r span {
+  font-size: 1.3rem;
+}
+.one .box-one .r span:last-child {
+  float: right;
+  margin-right: 10px;
+}
+.one .box-one .last {
+  border-bottom: none;
+}
