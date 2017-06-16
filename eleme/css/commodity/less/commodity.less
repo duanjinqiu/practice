@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul , li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body {
+  margin: 0;
+  background-color: #ececec;
+}
+.top {
+  height: 60px;
+  background-color: #3492ea;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  .inner {
+    width: 95%;
+    margin: 0 auto;
+    .left {
+      float: left;
+      line-height: 60px;
+    }
+    .right {
+      float: right;
+      line-height: 60px;
+    }
+  }
+  .dd {
+    line-height: 60px;
+  }
+}
+
+.fl {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  background-color: #fff;
+  .par {
+    width: 33.3%;
+    text-align: center;
+    position: relative;
+    &:nth-child(2) {
+      border-left: 1px solid;
+      border-right: 1px solid;
+    }
+  }
+}
+
+.box {
+  .items {
+    position: relative;
+    .active {
+      background-color: #fff;
+    }
+    &>li {
+      background-color: #f3f3f3;
+    }
+    .good, .item {
+      height: 70px;
+      width: 20%;
+      &>span {
+        line-height: 70px;
+      }
+    }
+    .item {
+      .child-box {
+        width: 80%;
+        position: absolute;
+        left: 20%;
+        top: 0;
+        .title {
+          height: 40px;
+          margin-left: 20px;
+          span {
+            line-height: 40px;
+          }
+        }
+        .sitem {
+          padding: 20px 0 0 20px;
+          background-color: #fff;
+          .inner {
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+
+            .img {
+              width: 20%;
+              float: left;
+              img {
+                width: 100%;
+              }
+            }
+            .right {
+              width: 80%;
+              padding: 0 12px;
+              float: left;
+              .con {
+                margin: 5px 0 20px 0;
+              }
+              .star_bg {
+                display: inline-block;
+                overflow: hidden;
+                .star {
+                  display: block;
+                  height: 15px;
+                  width: 15px;
+                  float: left;
+                  background: url('../../../image/index/star.gif');
+                  background-size: cover;
+                }
+              }
+
+              .details {
+                margin-bottom: 20px;
+                .details-prices {
+                  color: red;
+                  font-size: 1.3rem;
+                }
+                .add {
+                  width: 30px;
+                  height: 30px;
+                  background-color: #2c68ad;
+                  color: #fff;
+                  border-radius: 100%;
+                  text-align: center;
+                  float: right;
+                  span {
+                    font-size: 1.5rem;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

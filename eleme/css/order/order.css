@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.top {
+    height: 60px;
+    background-color: #3492ea;
+    color: #fff;
+    text-align: center;
+}
+.top .inner {
+    width: 95%;
+    margin: 0 auto;
+    line-height: 60px;
+}
+.dd {
+    font-size: 1.3rem;
+    /*line-height: 60px;*/
+}
+.zcdd {
+    float: right;
+    /*line-height: 60px;*/
+}
+.inner {
+    text-align: center;
+}
+.bottomnav {
+    display: flex;
+    text-align: center;
+}
+.item {
+    width: 25%;
+    padding: 5px;
+}

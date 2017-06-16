@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.header {
+  height: 60px;
+  background-color: #3492ea;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.header .inner {
+  padding: 0 15px;
+}
+.header .inner span {
+  line-height: 60px;
+}
+.header .inner .left {
+  float: left;
+}
+.header .inner .right {
+  float: right;
+}
+.fl {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.fl .par {
+  width: 33.33%;
+  text-align: center;
+  line-height: 50px;
+}
+.fav {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.fav .praise {
+  width: 35%;
+  border-right: 1px solid #ccc;
+}
+.fav .praise .num {
+  color: #ff8517;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+.fav .praise .sm {
+  color: #575757;
+}
+.fav .sa {
+  width: 65%;
+}
+.fav .sa div {
+  line-height: 32px;
+}
+.fav .sa .star_bg {
+  display: inline-block;
+  overflow: hidden;
+}
+.fav .sa .star_bg .star {
+  display: block;
+  height: 15px;
+  width: 15px;
+  float: left;
+  background: url('../../../image/index/star.gif');
+  background-size: cover;
+}
+.eva {
+  background-color: #fff;
+}
+.eva .sel {
+  padding-left: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.eva .sel .active {
+  background-color: #2c68ad;
+  color: #fff;
+}
+.eva .sel ul {
+  overflow: hidden;
+  padding: 10px 0;
+}
+.eva .sel ul li {
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.eva .sel label {
+  display: inline-block;
+  margin: 10px 0 20px 0;
+}
+.eva .item .inner {
+  margin-left: 15px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding: 10px 0;
+}
+.eva .item .inner .left {
+  width: 100%;
+}
+.eva .item .inner .left .star_bg {
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.eva .item .inner .left .star_bg .star {
+  display: block;
+  height: 15px;
+  width: 15px;
+  float: left;
+  background: url('../../../image/index/star.gif');
+  background-size: cover;
+}
+.eva .item .inner .left .comment {
+  margin-bottom: 10px;
+}
+.eva .item .inner .left .date-detail {
+  font-size: 0.7rem;
+  color: #ccc;
+}
+.eva .item .inner .right {
+  width: 30%;
+  margin-right: 15px;
+}
+.eva .item .inner .right .username {
+  font-size: 0.8rem;
+  float: right;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.eva .item .inner .right .user-img {
+  width: 30px;
+  float: right;
+}
+.eva .item .inner .right .user-img img {
+  width: 100%;
+}

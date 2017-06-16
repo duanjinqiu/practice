@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #1c9eff;
+}
+body .img {
+  width: 123px;
+  height: 198px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin-left: -61.5px;
+}
+body .img img {
+  width: 100%;
+}
+body .pro {
+  width: 96%;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  margin-left: -48%;
+}
+body .pro .progress {
+  width: 70%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #cacaca;
+}
+body .pro .progress .addp {
+  width: 30px;
+  height: 2px;
+  background-color: #f9f9f9;
+}
+body .pro p {
+  text-align: center;
+  color: #e5e5e5;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+body .bimg {
+  width: 235px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  margin-left: -117.5px;
+}
+body .bimg img {
+  width: 100%;
+}

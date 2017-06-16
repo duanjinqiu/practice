@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.header {
+  height: 60px;
+  background-color: #3492ea;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+
+  .inner {
+    span {
+      line-height: 60px;
+    }
+    padding: 0 15px;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+}
+.fl {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  .par {
+    width: 33.33%;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+.shop {
+  background-color: #fff;
+  margin-bottom: 20px;
+  .shop-detail {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px;
+    .img {
+      width: 50px;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+    .detail {
+      float: left;
+      padding-left: 20px;
+      .shop-name {
+        font-size: 1.2rem;
+      }
+      .con {
+        .star_bg {
+          display: inline-block;
+          overflow: hidden;
+          .star {
+            display: block;
+            height: 15px;
+            width: 15px;
+            float: left;
+            background: url('../../../image/index/star.gif');
+            background-size: cover;
+          }
+        }
+      }
+      .service {
+        font-weight: 800;
+      }
+    }
+    .collection {
+      float: right;
+      text-align: center;
+      .like {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        i {
+          line-height: 40px;
+        }
+      }
+      p {
+        color: #636363;
+      }
+    }
+  }
+  .sc {
+    padding: 20px;
+    ul {
+      display: flex;
+      li {
+        width: 33.33%;
+        text-align: center;
+        .price {
+          font-size: 1.4rem;
+          font-weight: 800;
+        }
+        &:nth-child(2) {
+          position: relative;
+          &::before {
+            display: inline-block;
+            content: '';
+            height: 50%;
+            border:1px solid #ccc;
+            position: absolute;
+            left: 0;
+            top: 30%;
+          }
+          &::after {
+            display: inline-block;
+            content: '';
+            height: 50%;
+            border:1px solid #ccc;
+            position: absolute;
+            left: 98%;
+            top: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+.message {
+  background-color: white;
+  margin-bottom: 20px;
+  .inner {
+    padding: 0 20px;
+    font-size: 1.2rem;
+    .red {
+      color: red;
+    }
+    div {
+      padding: 20px 0;
+    }
+    .title {
+      border-bottom: 1px solid #ccc;
+      p {
+        display: inline-block;
+        &:nth-child(2) {
+          color: #939393;
+          float: right;
+        }
+      }
+    }
+    .img {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+    }
+    .food {
+      display: flex;
+    }
+    .mes-detail {
+      width: 80%;
+      padding-left: 15px;
+      P {
+        margin: 8px 0;
+        .result {
+          color: green;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.header {
+  height: 60px;
+  background-color: #3492ea;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.header .inner {
+  padding: 0 15px;
+}
+.header .inner span {
+  line-height: 60px;
+}
+.header .inner .left {
+  float: left;
+}
+.header .inner .right {
+  float: right;
+}
+.fl {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.fl .par {
+  width: 33.33%;
+  text-align: center;
+  line-height: 50px;
+}
+.shop {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.shop .shop-detail {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  padding: 20px;
+}
+.shop .shop-detail .img {
+  width: 50px;
+  float: left;
+}
+.shop .shop-detail .img img {
+  width: 100%;
+}
+.shop .shop-detail .detail {
+  float: left;
+  padding-left: 20px;
+}
+.shop .shop-detail .detail .shop-name {
+  font-size: 1.2rem;
+}
+.shop .shop-detail .detail .con .star_bg {
+  display: inline-block;
+  overflow: hidden;
+}
+.shop .shop-detail .detail .con .star_bg .star {
+  display: block;
+  height: 15px;
+  width: 15px;
+  float: left;
+  background: url('../../../image/index/star.gif');
+  background-size: cover;
+}
+.shop .shop-detail .detail .service {
+  font-weight: 800;
+}
+.shop .shop-detail .collection {
+  float: right;
+  text-align: center;
+}
+.shop .shop-detail .collection .like {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.shop .shop-detail .collection .like i {
+  line-height: 40px;
+}
+.shop .shop-detail .collection p {
+  color: #636363;
+}
+.shop .sc {
+  padding: 20px;
+}
+.shop .sc ul {
+  display: flex;
+}
+.shop .sc ul li {
+  width: 33.33%;
+  text-align: center;
+}
+.shop .sc ul li .price {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.shop .sc ul li:nth-child(2) {
+  position: relative;
+}
+.shop .sc ul li:nth-child(2)::before {
+  display: inline-block;
+  content: '';
+  height: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.shop .sc ul li:nth-child(2)::after {
+  display: inline-block;
+  content: '';
+  height: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 98%;
+  top: 30%;
+}
+.message {
+  background-color: white;
+  margin-bottom: 20px;
+}
+.message .inner {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.message .inner .red {
+  color: red;
+}
+.message .inner div {
+  padding: 20px 0;
+}
+.message .inner .title {
+  border-bottom: 1px solid #ccc;
+}
+.message .inner .title p {
+  display: inline-block;
+}
+.message .inner .title p:nth-child(2) {
+  color: #939393;
+  float: right;
+}
+.message .inner .img {
+  width: 20%;
+}
+.message .inner .img img {
+  width: 100%;
+}
+.message .inner .food {
+  display: flex;
+}
+.message .inner .mes-detail {
+  width: 80%;
+  padding-left: 15px;
+}
+.message .inner .mes-detail P {
+  margin: 8px 0;
+}
+.message .inner .mes-detail P .result {
+  color: green;
+}

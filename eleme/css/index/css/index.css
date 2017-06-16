@@ -1,0 +1,242 @@
+body {
+  background-color: #eee;
+}
+body .arrow {
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top: 5px solid #9d9d9d;
+}
+body ul,
+body li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body .top {
+  height: 110px;
+  background-color: #3492ea;
+  color: #fff;
+}
+body .top .inner {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+body .top .inner .location {
+  font-size: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+body .top .inner .location .ifont {
+  font-size: 2rem;
+  float: left;
+}
+body .top .inner .location .address {
+  display: inline-block;
+  max-width: 50%;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+body .top .inner .location .location-arrow {
+  margin-top: 4%;
+  border-top-color: #fff;
+  float: left;
+}
+body .top .inner .search form input {
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  color: #7d7d7d;
+  outline: none;
+}
+body .middle {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 20px 0 0 0;
+  box-shadow: 0px 0px 4px 0px #9E9E9E;
+}
+body .middle .item {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .middle .item .img img {
+  width: 50px;
+}
+body .rsl {
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+body .rsl .fl {
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+body .rsl .fl li {
+  float: left;
+  width: 33.3%;
+}
+body .rsl .fl li:first-child {
+  border-right: 1px solid #e2e2e2;
+}
+body .rsl .fl li:last-child {
+  border-left: 1px solid #e2e2e2;
+}
+body .rsl .fl li .d {
+  width: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+body .rsl .fl li .d .fl-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin-top: -2.5px;
+}
+body .rsl .item {
+  padding-top: 25px;
+  background-color: #fff;
+  overflow: hidden;
+}
+body .rsl .item .inner {
+  overflow: hidden;
+  width: 95%;
+  float: right;
+  border-bottom: 1px solid #e2e2e2;
+}
+body .rsl .item .pic {
+  float: left;
+  width: 20%;
+  padding: 0 10px 10px 0;
+}
+body .rsl .item .pic img {
+  width: 100%;
+}
+body .rsl .item .con {
+  float: left;
+  width: 80%;
+}
+body .rsl .item .con .ct {
+  border-bottom: 1px solid #f5f5f5;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+body .rsl .item .con .ct .ct-top {
+  width: 100%;
+  float: left;
+  padding-right: 20px;
+}
+body .rsl .item .con .ct .ct-top .he {
+  overflow: hidden;
+}
+body .rsl .item .con .ct .ct-top .he .Fleft {
+  float: left;
+}
+body .rsl .item .con .ct .ct-top .he .resName {
+  font-size: 1.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+body .rsl .item .con .ct .ct-top .he .distance {
+  float: left;
+}
+body .rsl .item .con .ct .ct-top .he .Fright {
+  float: right;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .qs {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .psf {
+  color: red;
+  font-weight: 600;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .zf {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: top;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .emoji {
+  color: #92a86f;
+  border: 1px solid #92a86f;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .piao {
+  color: #aea5bf;
+  border: 1px solid #aea5bf;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .bao {
+  color: #598733;
+  border: 1px solid #598733;
+}
+body .rsl .item .con .ct .ct-top .he .Fright .ps {
+  display: inline-block;
+  background-color: #4ea6fc;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0 2px;
+}
+body .rsl .item .con .ct .ct-top ul {
+  overflow: hidden;
+}
+body .rsl .item .con .ct .ct-top li {
+  float: left;
+}
+body .rsl .item .con .ct .ct-top .star_bg {
+  overflow: hidden;
+}
+body .rsl .item .con .ct .ct-top .star_bg .star {
+  display: block;
+  height: 15px;
+  width: 15px;
+  float: left;
+  background: url('../../../image/index/star.gif');
+  background-size: cover;
+}
+body .rsl .item .con .bottom .aa {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .rsl .item .con .bottom .j {
+  background-color: #d434de;
+}
+body .rsl .item .con .bottom .d {
+  background-color: #53b3d9;
+}
+body #footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #f7f7f7;
+  border-top: 1px solid #c3c3c3;
+}
+body #footer .bottomnav {
+  display: flex;
+  text-align: center;
+}
+body #footer .bottomnav .active {
+  color: #339be2;
+}
+body #footer .bottomnav .item {
+  width: 25%;
+  padding: 5px;
+}
+body #footer .bottomnav .item .footfont {
+  font-size: 3rem;
+  line-height: 1;
+}
