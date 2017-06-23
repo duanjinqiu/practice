@@ -1,11 +1,12 @@
 /**
  * Created by duan on 2017/6/19.
  */
-var start = $('.start');
-var inner = $('ul.inner');
-var lis = $('.inner li');
-var windowWidth = $(window).width();
-var windowHeight = $(window).height();
+
+let start = $('.start');
+let inner = $('ul.inner');
+let lis = $('.inner li');
+let windowWidth = $(window).width();
+let windowHeight = $(window).height();
 lis.width(windowWidth);
 lis.height(windowHeight);
 inner.width(windowWidth * 3);
@@ -15,12 +16,12 @@ start.on({
     'touchmove': touchmove,
     'touchend': touchend,
 });
-for (i in lis) {
+for(i in lis){
     lis[i].index = i;
 }
-e.target == lis[i];
-var startX, moveX, endX;
-var startScrollLeft = 0;
+e.target == lis[i]
+let startX, moveX, endX;
+let startScrollLeft = 0;
 function touchstart(e) {
     start.bind('touchmove', touchmove);
     startX = e.originalEvent.targetTouches[0].clientX;
@@ -32,26 +33,32 @@ function touchmove(e) {
     start.scrollLeft(startScrollLeft + moveX);
     if (moveX > 80) {
         i++;
-        console.log(i);
-        start.stop(true).animate({ scrollLeft: lis.width() * i }, 'slow');
+        console.log(i)
+
+        start.stop(true).animate({scrollLeft: lis.width() * i}, 'slow');
+
         start.unbind('touchmove');
         // start.unbind('touchstart');
         // setTimeout(function() {
         //     start.bind('touchstart');
         // }, 1000);
-    }
-    else if (moveX < -80) {
+    } else if (moveX < -80) {
         i--;
         start.unbind('touchmove');
-        start.stop(true).animate({ scrollLeft: lis.width() * i }, 'slow');
+        start.stop(true).animate({scrollLeft: lis.width() * i}, 'slow');
     }
 }
 function touchend(e) {
     endX = e.originalEvent.changedTouches[0].clientX;
     // console.log('endX: ' + endX);
+
 }
 // start.scrollLeft(200);
 // console.log(start.scrollLeft())
+
+
+
+
 // var tempData;
 // $.ajax({
 //     url: 'http://localhost:5500/restaurant',
@@ -224,4 +231,4 @@ function touchend(e) {
 //
 // $('body').on('click', function() {
 //     $('.suggestion').hide();
-// }); 
+// });

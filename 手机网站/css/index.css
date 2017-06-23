@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+#header .inner {
+  padding: 10px 10px;
+}
+#header .inner .left {
+  width: 80%;
+  float: left;
+}
+#header .inner .left .logo {
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+#header .inner .left .logo img {
+  width: 100%;
+  height: 100%;
+}
+#header .inner .left .name {
+  line-height: 35px;
+  font-size: 1.3rem;
+  float: left;
+  margin-left: 10px;
+}
+#header .inner .menu {
+  width: 17%;
+  height: 40px;
+  background-color: red;
+  position: relative;
+  float: right;
+}
+#header .inner .menu .navbg {
+  width: 42%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21%;
+  margin-top: -25%;
+}
+#header .second-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+}
+#header .second-menu .close {
+  padding: 2px 2px 8px;
+  text-align: right;
+}
+#header .second-menu .close a {
+  width: 9%;
+  line-height: 33px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: red;
+  font-size: 1.6rem;
+  color: #fff;
+}
+#header .second-menu .item {
+  border-bottom: 1px solid #fff;
+}
+#header .second-menu .item:last-child {
+  border-bottom: none;
+}
+#header .second-menu .item a {
+  display: block;
+  padding-left: 20px;
+  line-height: 45px;
+  background-color: red;
+  color: #fff;
+}
+#rotation {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 80%;
+}
+#rotation .inner {
+  width: 1500px;
+}
+#rotation .inner .item {
+  float: left;
+  width: 375px;
+  height: 300px;
+  padding-top: 70px;
+  background: url("../image/bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -zol-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rotation .inner .item .text {
+  text-align: center;
+}
+#rotation .inner .item .text .t1 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+#rotation .inner .item .text .t2 {
+  font-size: 1.9rem;
+  color: #fff;
+}
+#nav {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+}
+#nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+#nav ul .item {
+  width: 50%;
+  padding: 10px 10px 0 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+#nav ul .item .p {
+  width: 100%;
+  height: 150px;
+  padding-top: 60%;
+  text-align: center;
+}
+#nav ul .item .item1 {
+  background: url(../image/fx5n.png) no-repeat #008000;
+  background-position: center 20px;
+}
+#nav ul .item .item2 {
+  background: url(../image/fx5n.png) no-repeat #ffa500;
+  background-position: center 20px;
+}
+#nav ul .item .item3 {
+  background: url(../image/fx5n.png) no-repeat #00bfff;
+  background-position: center 20px;
+}
+#nav ul .item .item4 {
+  background: url(../image/fx5n.png) no-repeat #c71585;
+  background-position: center 20px;
+}
+#klass {
+  margin-bottom: 50px;
+}
+#klass .top {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#klass .top h1 {
+  color: #fd734a;
+}
+#klass .inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  text-align: center;
+  color: #fd734a;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+#klass .inner .item {
+  width: 50%;
+  padding: 5px 5px 0 0;
+}
+#klass .inner .item .img img {
+  width: 100%;
+  height: 100%;
+}
+#klass .more {
+  text-align: center;
+}
+#klass .more .morebt {
+  width: 150px;
+  line-height: 40px;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+}
+#about {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 50px;
+}
+#about .top {
+  margin-bottom: 20px;
+}
+#about .top .title {
+  font-size: 1.5rem;
+}
+#about .text {
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+#about .more {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#about .more .morebt {
+  width: 120px;
+  line-height: 40px;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#about .bottom-bg {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("../image/bottom-bg.png") no-repeat bottom;
+}
+#news .top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#news .top .title {
+  color: red;
+}
+#news .top .subtitle::before {
+  display: inline-block;
+  content: '';
+  width: 40px;
+  vertical-align: middle;
+  border: 1px solid;
+  margin-right: 10px;
+}
+#news .top .subtitle::after {
+  display: inline-block;
+  content: '';
+  width: 40px;
+  vertical-align: middle;
+  border: 1px solid;
+  margin-left: 10px;
+}
+#news .container ul {
+  margin-bottom: 40px;
+}
+#news .container ul .item {
+  margin-right: 25px;
+  border-bottom: 1px dashed;
+}
+#news .container ul .item p {
+  line-height: 40px;
+}
+#news .container ul .item .new {
+  display: inline-block;
+}
+#news .container ul .item .new .img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../image/22.png') no-repeat center;
+  -webkit-background-size: 20px;
+  -zol-background-size: 20px;
+  -ms-background-size: 20px;
+  -o-background-size: 20px;
+  background-size: 20px;
+  vertical-align: middle;
+}
+#news .container ul .item .new a {
+  color: #000;
+}
+#news .container ul .item .time {
+  display: inline-block;
+  float: right;
+}
+#news .container .more {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#news .container .more .morebt {
+  display: inline-block;
+  width: 120px;
+  line-height: 40px;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  line-height: 60px;
+}

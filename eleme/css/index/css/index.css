@@ -1,6 +1,27 @@
 body {
   background-color: #eee;
 }
+body .start {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body .start .inner li {
+  float: left;
+}
+body .start .inner li img {
+  width: 100%;
+  height: 100%;
+}
+body .starActive {
+  display: block;
+  height: 15px;
+  width: 15px;
+  float: left;
+  background: url(../../../image/index/star.gif);
+  background-size: cover;
+  background-position: 0 -17px;
+}
 body .arrow {
   display: inline-block;
   border: 5px solid transparent;
@@ -11,6 +32,9 @@ body li {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+body .hehe {
+  display: none;
 }
 body .top {
   height: 110px;
@@ -45,6 +69,9 @@ body .top .inner .location .location-arrow {
   border-top-color: #fff;
   float: left;
 }
+body .top .inner .search {
+  position: relative;
+}
 body .top .inner .search form input {
   height: 35px;
   width: 100%;
@@ -53,6 +80,16 @@ body .top .inner .search form input {
   border-radius: 7px;
   color: #7d7d7d;
   outline: none;
+}
+body .top .inner .search .suggestion {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  background-color: #c53838;
+}
+body .top .inner .search .suggestion li {
+  line-height: 35px;
 }
 body .middle {
   display: flex;
@@ -75,30 +112,45 @@ body .rsl {
   margin-bottom: 60px;
 }
 body .rsl .fl {
-  overflow: hidden;
   padding: 10px 0;
   border-bottom: 1px solid #e2e2e2;
+  height: 40px;
 }
-body .rsl .fl li {
+body .rsl .fl .first-menu {
   float: left;
   width: 33.3%;
 }
-body .rsl .fl li:first-child {
+body .rsl .fl .first-menu:first-child {
   border-right: 1px solid #e2e2e2;
 }
-body .rsl .fl li:last-child {
+body .rsl .fl .first-menu:last-child {
   border-left: 1px solid #e2e2e2;
 }
-body .rsl .fl li .d {
+body .rsl .fl .first-menu .d {
   width: 40px;
   margin: 0 auto;
   position: relative;
 }
-body .rsl .fl li .d .fl-arrow {
+body .rsl .fl .first-menu .d .fl-arrow {
   position: absolute;
   top: 50%;
   left: 30px;
   margin-top: -2.5px;
+}
+body .rsl .fl .px {
+  position: relative;
+}
+body .rsl .fl .px .second-menu {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  display: none;
+}
+body .rsl .fl .px .second-menu .second-item {
+  line-height: 40px;
 }
 body .rsl .item {
   padding-top: 25px;

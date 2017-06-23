@@ -43,6 +43,7 @@ http.createServer(function (req, res) {
             res.writeHead(404, {"Content-Type": "text/html"});
             res.end("<h1>404 Not Found</h1>");
         }
+        console.log(pathname);
     });
 }).listen(8000);
 console.log("服务器已经成功运行");

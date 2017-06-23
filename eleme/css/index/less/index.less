@@ -2,6 +2,31 @@
 body {
   background-color: #eee;
 
+  .start {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .inner {
+      li {
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .starActive {
+    display: block;
+    height: 15px;
+    width: 15px;
+    float: left;
+    background: url(../../../image/index/star.gif);
+    background-size: cover;
+    background-position: 0 -17px;
+  }
+
   .arrow {
     display: inline-block;
     border: 5px solid transparent;
@@ -13,7 +38,9 @@ body {
     margin: 0;
     list-style-type: none;
   }
-
+  .hehe {
+    display: none;
+  }
   .top {
     height: 110px;
     background-color: #3492ea;
@@ -49,6 +76,7 @@ body {
       }
 
       .search {
+        position: relative;
         form {
 
           input {
@@ -59,6 +87,16 @@ body {
             border-radius: 7px;
             color: #7d7d7d;
             outline: none;
+          }
+        }
+        .suggestion {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          z-index: 999;
+          background-color: #c53838;
+          li {
+            line-height: 35px;
           }
         }
       }
@@ -92,19 +130,19 @@ body {
     margin-bottom: 60px;
 
     .fl {
-      overflow: hidden;
       padding: 10px 0;
       border-bottom: 1px solid @border_color;
-      li {
+      height: 40px;
+      .first-menu {
         float: left;
         width: 33.3%;
-
         &:first-child {
           border-right: 1px solid @border_color;
         }
         &:last-child {
           border-left: 1px solid @border_color;
         }
+
         .d {
           width: 40px;
           margin: 0 auto;
@@ -114,6 +152,23 @@ body {
             top: 50%;
             left: 30px;
             margin-top: -2.5px;
+          }
+        }
+      }
+
+      .px {
+        position: relative;
+        .second-menu {
+          position: absolute;
+          left: 0;
+          top: 20px;
+          width: 100%;
+          text-align: center;
+          background-color: whitesmoke;
+          display: none;
+
+          .second-item {
+            line-height: 40px;
           }
         }
       }
