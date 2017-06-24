@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>售电利润计算器</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<ul id="header">
+    <li class="active data">测算数据</li>
+    <li class="result">
+        <a href="result.html">测算结果</a>
+    </li>
+</ul>
+<ul id="table">
+    <form action="">
+        <li>
+            <label>
+                <span class="klass">预测用电量</span>
+                <input class="input" type="text" name="yc" value="">
+                <span class="unit">万千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">用户实际电量</span>
+                <input class="input" type="text" name="sj" value="">
+                <span class="unit">万千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">双边协商月分解电量</span>
+                <input class="input" type="text" name="fj" value="">
+                <span class="unit">万千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">双边协商价差</span>
+                <input class="input" type="text" name="jc" value="">
+                <span class="unit">厘/千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">月度竞价成交电量</span>
+                <input class="input" type="text" name="jj" value="">
+                <span class="unit">万千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">月度出清结算价</span>
+                <input class="input" type="text" name="js" value="">
+                <span class="unit">厘/千瓦时</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <span class="klass">允许偏差范围±%</span>
+                <input class="input dev" type="text" name="pc" value="" placeholder="偏差范围以内的电量免于考核">
+            </label>
+        </li>
+    </form>
+</ul>
+<div id="contract">
+    <div class="top">
+        <span class="it">合同模式</span>
+        <div class="right">
+            <select class="mode">
+                <option value="">请选择合同模式</option>
+                <option value="1">全电量包偏差</option>
+                <option value="2">长协加月度（分成）</option>
+                <option value="3">长协加月度（保底加分成）</option>
+            </select>
+            <span class="reserved">
+                <span class="help">?</span>
+            </span>
+        </div>
+    </div>
+    <div class="bottom">
+        <label>
+            <span class="price">目录电价</span>
+            <input class="input" type="text" name="price" value="">
+            <span class="unit">元/千瓦时</span>
+        </label>
+    </div>
+</div>
+<div id="footer">
+    <div>
+        <span class="reset">重置</span>
+    </div>
+    <div>
+        <span class="cal">测算</span>
+    </div>
+</div>
+<div class="contractHelp second-menu">
+    <div class="top">
+        <p class="title">合同模式</p>
+        <span class="close">X</span>
+    </div>
+    <div class="bottom">
+        <p class="title">合同模式说明</p>
+        <div class="content">
+            <p class="minTitle">全电量包偏差模式:</p>
+            <p class="text">
+                偏差电量扣除了允许偏差范围内的电量即为考核电量。
+            </p>
+            <p class="minTitle">长协加月度（分成）模式:</p>
+            <p class="text">
+                双方约定长协价差双方约定长协价差双方约定长协价差
+                双方约定长协价差双方约定长协价差双方约定长协价差
+                双方约定长协价差双方约定长协价差双方约定长协价差
+                双方约定长协价差双方约定长协价差双方约定长协价差
+            </p>
+        </div>
+    </div>
+</div>
+<!--<div class="selMode second-menu">-->
+    <!--<div class="bottom">-->
+        <!--<p class="button">-->
+            <!--<span class="cancel bt">取消</span>-->
+            <!--<span class="confirm bt">确定</span>-->
+        <!--</p>-->
+        <!--<select class="select">-->
+            <!--<option value="">全电量包偏差</option>-->
+            <!--<option value="">长协加月度（分成）</option>-->
+            <!--<option value="">长协加月度（保底加分成）</option>-->
+        <!--</select>-->
+    <!--</div>-->
+<!--</div>-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

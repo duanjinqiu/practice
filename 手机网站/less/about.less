@@ -103,30 +103,37 @@ a {
 }
 
 #rotation {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 30px;
   position: relative;
-  .inner {
-    width: 1500px;
-    .item {
-      float: left;
-      width: 375px;
-      height: 300px;
-      padding-top: 70px;
-      background: url("../image/bg.jpg") no-repeat center;
-      .background-size(cover);
-      .text {
-        text-align: center;
-        .t1 {
-          font-size: 1.2rem;
-          color: #fff;
-        }
-        .t2 {
-          font-size: 1.9rem;
-          color: #fff;
+  margin-bottom: 30px;
+
+  .outter {
+    width: 100%;
+    overflow: hidden;
+    .inner {
+      width: 1500px;
+      .item {
+        float: left;
+        width: 375px;
+        height: 300px;
+        padding-top: 70px;
+        background: url("../image/bg.jpg") no-repeat center;
+        .background-size(cover);
+        .text {
+          text-align: center;
+          .t1 {
+            font-size: 1.2rem;
+            color: #fff;
+          }
+          .t2 {
+            font-size: 1.9rem;
+            color: #fff;
+          }
         }
       }
+    }
+
+    .swiper-pagination-bullets {
+      
     }
   }
   .control {
@@ -135,6 +142,7 @@ a {
     right: 30px;
     bottom: 30px;
     display: flex;
+    z-index: 2;
     .citem {
       display: inline-block;
       width: 50%;

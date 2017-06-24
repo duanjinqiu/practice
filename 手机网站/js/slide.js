@@ -12,7 +12,7 @@ $('.closebt').on('touchstart', function (e) {
 var windowWidth = $(window).width();
 var lis = $('#rotation .inner .item');
 var inner = $('#rotation .inner');
-var rotation = $('#rotation');
+var outter = $('#rotation .outter');
 lis.width(windowWidth);
 inner.width(lis.length * lis.width());
 var span = $('.citem span');
@@ -22,6 +22,15 @@ for (var i = 0; i < span.length; i++) {
 
 span.on('touchstart', function () {
     $(this).addClass('active');
-    rotation.stop(true).animate({scrollLeft: this.index * windowWidth}, 800);
+    outter.stop(true).animate({scrollLeft: this.index * windowWidth}, 800);
     $(this).parent().siblings().children().removeClass();
+});
+//初始化swiper
+$(document).ready(function() {
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: '.swiper-pagination',
+    })
 });

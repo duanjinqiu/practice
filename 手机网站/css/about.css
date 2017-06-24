@@ -92,15 +92,17 @@ a {
   color: #fff;
 }
 #rotation {
+  position: relative;
+  margin-bottom: 30px;
+}
+#rotation .outter {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 30px;
-  position: relative;
 }
-#rotation .inner {
+#rotation .outter .inner {
   width: 1500px;
 }
-#rotation .inner .item {
+#rotation .outter .inner .item {
   float: left;
   width: 375px;
   height: 300px;
@@ -112,14 +114,14 @@ a {
   -o-background-size: cover;
   background-size: cover;
 }
-#rotation .inner .item .text {
+#rotation .outter .inner .item .text {
   text-align: center;
 }
-#rotation .inner .item .text .t1 {
+#rotation .outter .inner .item .text .t1 {
   font-size: 1.2rem;
   color: #fff;
 }
-#rotation .inner .item .text .t2 {
+#rotation .outter .inner .item .text .t2 {
   font-size: 1.9rem;
   color: #fff;
 }
@@ -129,6 +131,7 @@ a {
   right: 30px;
   bottom: 30px;
   display: flex;
+  z-index: 2;
 }
 #rotation .control .citem {
   display: inline-block;

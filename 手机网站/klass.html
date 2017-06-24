@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <title>class</title>
     <link rel="stylesheet" href="css/klass.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 </head>
 <body>
 <div id="header">
@@ -44,30 +45,22 @@
     </ul>
 </div>
 <div id="rotation">
-    <ul class="inner">
-        <li class="item">
-            <div class="text">
-                <p class="t1">专 业 培 训 通 向 成 功 而 奋斗</p>
-                <p class="t2">顶级名师权威辅导</p>
-            </div>
-        </li>
-        <li class="item">
-            <div class="text">
-                <p class="t1">专 业 培 训 通 向 成 功 而 奋斗</p>
-                <p class="t2">顶级名师权威辅导</p>
-            </div>
-        </li>
-    </ul>
-    <div class="pa">
-        <ul class="control">
-
-            <li class="citem">
-                <span class="active"></span>
+    <div class="swiper-container outter">
+        <ul class="swiper-wrapper inner">
+            <li class="swiper-slide item">
+                <div class="text">
+                    <p class="t1">专 业 培 训 通 向 成 功 而 奋斗</p>
+                    <p class="t2">顶级名师权威辅导</p>
+                </div>
             </li>
-            <li class="citem">
-                <span></span>
+            <li class="swiper-slide item">
+                <div class="text">
+                    <p class="t1">专 业 培 训 通 向 成 功 而 奋斗</p>
+                    <p class="t2">顶级名师权威辅导</p>
+                </div>
             </li>
         </ul>
+        <div class="swiper-pagination"></div>
     </div>
 </div>
 <div id="klass">
@@ -157,6 +150,7 @@
     <p>联系地址：xxxxxx</p>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/news.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/slide.js"></script>
 </body>
 </html>

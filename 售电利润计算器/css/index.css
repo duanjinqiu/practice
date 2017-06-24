@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft YaHei";
+  box-sizing: border-box;
+}
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 0.9rem;
+  }
+  html body #table li label .unit {
+    width: 22%;
+  }
+  html body #contract .bottom label .unit {
+    width: 22%;
+    font-size: 0.8rem;
+    color: #a9a9a9;
+  }
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+body {
+  padding: 0 20px;
+}
+body #header {
+  width: 75%;
+  background-color: white;
+  margin: 5% auto 5% auto;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 1px #898989;
+  -zol-box-shadow: 0px 0px 1px #898989;
+  -ms-box-shadow: 0px 0px 1px #898989;
+  -o-box-shadow: 0px 0px 1px #898989;
+  box-shadow: 0px 0px 1px #898989;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #444;
+}
+body #header .active {
+  background-color: #00da00;
+  color: #fff;
+}
+body #header li {
+  width: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+body #header li a {
+  display: inline-block;
+  width: 100%;
+  color: #6f6f6f;
+  text-decoration: none;
+}
+body #header .data {
+  -webkit-border-top-left-radius: 5px;
+  -zol-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -zol-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body #header .result {
+  -webkit-border-top-right-radius: 5px;
+  -zol-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -zol-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body #table {
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: white;
+  -webkit-border-radius: 2px;
+  -zol-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 1px #9e9e9e;
+  -zol-box-shadow: 0 0 1px #9e9e9e;
+  -ms-box-shadow: 0 0 1px #9e9e9e;
+  -o-box-shadow: 0 0 1px #9e9e9e;
+  box-shadow: 0 0 1px #9e9e9e;
+  margin-bottom: 30px;
+}
+body #table li {
+  border-bottom: 1px solid #e0e0e0;
+}
+body #table li:last-child {
+  border-bottom: none;
+}
+body #table li label {
+  display: flex;
+  width: 100%;
+  line-height: 50px;
+}
+body #table li label .klass {
+  width: 50%;
+  color: #525252;
+  font-size: 0.8rem;
+}
+body #table li label .input {
+  width: 44%;
+  border: none;
+  outline: none;
+  text-align: right;
+  color: #333333;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+body #table li label input::-moz-placeholder {
+  font-weight: normal;
+  color: #a9a9a9;
+  font-size: 0.6rem;
+}
+body #table li label input::-moz-placeholder {
+  font-weight: normal;
+  color: #a9a9a9;
+  font-size: 0.6rem;
+}
+body #table li label input:-ms-input-placeholder {
+  font-weight: normal;
+  color: #a9a9a9;
+  font-size: 0.6rem;
+}
+body #table li label input::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #a9a9a9;
+  font-size: 0.6rem;
+}
+body #table li label .unit {
+  width: 20%;
+  font-size: 0.6rem;
+  color: #a9a9a9;
+  text-align: right;
+}
+body #table li label .dev {
+  width: 67%;
+  margin-left: -30px;
+}
+body #contract {
+  padding: 0 15px;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  -zol-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 1px #9e9e9e;
+  -zol-box-shadow: 0 0 1px #9e9e9e;
+  -ms-box-shadow: 0 0 1px #9e9e9e;
+  -o-box-shadow: 0 0 1px #9e9e9e;
+  box-shadow: 0 0 1px #9e9e9e;
+  margin-bottom: 40px;
+}
+body #contract .top {
+  position: relative;
+  overflow: hidden;
+  line-height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+body #contract .top .it {
+  float: left;
+  color: #525252;
+  font-size: 0.8rem;
+}
+body #contract .top .right {
+  width: 50%;
+  float: right;
+}
+body #contract .top .right .mode {
+  color: #525252;
+  font-size: 0.8rem;
+  border: none;
+  width: 84%;
+  background-color: transparent;
+  outline: none;
+}
+body #contract .top .right .reserved {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+body #contract .top .right .reserved .help {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 15px;
+  -webkit-border-radius: 100%;
+  -zol-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #bcbcbc;
+  color: #fff;
+  position: relative;
+  font-weight: 800;
+}
+body #contract .bottom label {
+  display: flex;
+  width: 100%;
+  line-height: 50px;
+}
+body #contract .bottom label .price {
+  width: 25%;
+  color: #525252;
+  font-size: 0.8rem;
+}
+body #contract .bottom label .input {
+  width: 55%;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding-right: 5px;
+  color: #4e4e4e;
+  font-weight: 600;
+}
+body #contract .bottom label .unit {
+  width: 20%;
+  font-size: 0.6rem;
+  color: #a9a9a9;
+}
+body #contract .bottom label .dev {
+  width: 60%;
+  margin-left: -30px;
+}
+body #footer {
+  display: flex;
+  margin-bottom: 60px;
+}
+body #footer div {
+  width: 50%;
+  text-align: center;
+  padding: 0 10px;
+}
+body #footer div span {
+  display: inline-block;
+  width: 100%;
+  line-height: 40px;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+body #footer div .reset {
+  background-color: #777777;
+}
+body #footer div .cal {
+  background-color: green;
+}
+body .second-menu {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 12px 0px #cacaca;
+  -zol-box-shadow: 0 0 12px 0px #cacaca;
+  -ms-box-shadow: 0 0 12px 0px #cacaca;
+  -o-box-shadow: 0 0 12px 0px #cacaca;
+  box-shadow: 0 0 12px 0px #cacaca;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -zol-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+body .second-menu .top {
+  position: relative;
+}
+body .second-menu .top .title {
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+body .second-menu .top .close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 20px;
+}
+body .second-menu .bottom {
+  padding: 20px;
+}
+body .second-menu .bottom .title {
+  color: #747474;
+  margin-bottom: 10px;
+}
+body .second-menu .bottom .content .minTitle {
+  color: green;
+  font-weight: 800;
+  text-indent: 2rem;
+}
+body .second-menu .bottom .text {
+  text-indent: 2rem;
+}
+body .second-menu .bottom .button {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+body .second-menu .bottom .button .cancel {
+  float: left;
+}
+body .second-menu .bottom .button .confirm {
+  float: right;
+  color: green;
+}
+body .second-menu .bottom .select {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+body .second-menu .bottom .select li {
+  line-height: 40px;
+  border-bottom: 1px solid whitesmoke;
+  text-align: center;
+}
+body .contractHelp {
+  display: none;
+}
+body .selMode {
+  display: none;
+}
